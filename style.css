@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  color: #201e1b;
+  background-color: #ffffff;
+}
+
+.intestazione {
+  background-color: #0b6e4f;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
+
+.menu {
+  background-color: #e4f0ea;
+  text-align: center;
+  padding: 10px;
+}
+
+.voce {
+  display: inline-block;
+  margin: 5px 12px;
+  font-weight: bold;
+}
+
+.contenuto {
+  margin: 20px;
+  padding: 20px;
+}
+
+.evidenziato {
+  background-color: #fbf0ce;
+  border-left: 5px solid #e2a400;
+  padding: 10px;
+}
+
+.piede {
+  background-color: #201e1b;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+}
