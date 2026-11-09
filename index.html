@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <title>Scarabeo</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | WordArena</title>
+  <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-<div class="intestazione">
-  <h1>Scarabeo</h1>
-  <p>Una frase che descrive il sito</p>
-</div>
-
-<div class="menu">
-  <a class="voce" href="#">Home</a>
-  <a class="voce" href="#">Gioco</a>
-  <a class="voce" href="#">Contatti</a>
-</div>
-
-<div class="contenuto">
-  <h2>Benvenuti</h2>
-  <p>Questa è la pagina iniziale.</p>
-  <p class="evidenziato">questa sarà la Home.</p>
-</div>
-
-<div class="piede">© Viktor Gabriele</div>
+  <!-- Intestazione comune alle quattro pagine -->
+  <header class="intestazione">
+    <a class="logo" href="index.html">W<span>WordArena</span></a>
+    <p>Una lettera alla volta.</p>
+  </header>
+  <!-- Menu orizzontale: ogni collegamento apre un file HTML -->
+  <nav aria-label="Menu principale">
+    <ul>
+        <li><a href="index.html" class="attiva" aria-current="page">Home</a></li>
+        <li><a href="gioco.html">Gioco</a></li>
+        <li><a href="classifiche.html">Classifiche</a></li>
+        <li><a href="regole.html">Regole</a></li>
+    </ul>
+  </nav>
+  <main id="contenuto">
+    <section class="presentazione">
+      <p class="etichetta">IL TUO SPAZIO PER LE PAROLE</p>
+      <h1>Gioca con le lettere.<br>Supera il tuo record.</h1>
+      <p>Benvenuto su WordArena, un progetto dedicato a Scarabeo. Qui potrai comporre parole, accumulare punti e confrontare i tuoi risultati con quelli degli altri giocatori.</p>
+      <a class="pulsante" href="gioco.html">Esplora il gioco →</a>
+    </section>
+    <section aria-labelledby="cosa-fare">
+      <h2 id="cosa-fare">Cosa puoi trovare</h2>
+      <div class="colonne">
+        <article class="scheda"><p class="numero">01</p><h3>Il gioco</h3><p>Lo spazio per il tabellone, le lettere disponibili e il punteggio della partita.</p><a href="gioco.html">Vai al gioco →</a></article>
+        <article class="scheda"><p class="numero">02</p><h3>Le classifiche</h3><p>Confronta punti totali, lettere utilizzate e miglior punteggio personale.</p><a href="classifiche.html">Scopri le classifiche →</a></article>
+        <article class="scheda"><p class="numero">03</p><h3>Le regole</h3><p>Scopri l'obiettivo del gioco e come si compongono le parole sul tabellone.</p><a href="regole.html">Leggi le regole →</a></article>
+      </div>
+    </section>
+    <p class="avviso">Versione dimostrativa: per ora è disponibile soltanto il layout. Gioco e salvataggio dei risultati verranno sviluppati in seguito.</p>
+  </main>
+  <footer><p>WordArena · Progetto di informatica · Layout HTML e CSS</p></footer>
 </body>
 </html>

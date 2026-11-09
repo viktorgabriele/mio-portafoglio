@@ -1,0 +1,150 @@
+* { box-sizing: border-box; }
+body { margin: 0; 
+  background: #f5f3ec; 
+  color: #24352e; 
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; }
+a { color: #245d48; 
+  text-underline-offset: 4px; }
+a:hover { color: #153c2d; }
+a:focus-visible { outline: 3px solid #b86a1c; 
+  outline-offset: 4px; }
+/* Testata e navigazione */
+.intestazione { max-width: 1120px; 
+  margin: auto; 
+  padding: 24px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; }
+.intestazione p { color: #59665e; }
+.logo { display: flex; 
+  gap: 12px; 
+  align-items: center; 
+  font-size: 26px; 
+  font-weight: bold; 
+  text-decoration: none; }
+.logo::first-letter { color: #245d48; }
+nav { background: #214d3c; }
+nav ul { max-width: 1120px; 
+  margin: auto; padding: 0 24px; 
+  list-style: none; 
+  display: flex; }
+nav a { display: block; 
+  padding: 15px 25px; 
+  color: white; 
+  text-decoration: none; 
+  border-bottom: 4px solid transparent; }
+nav a:hover, nav a.attiva { background: #30634e; 
+  color: white; 
+  border-bottom-color: #e8c46b; }
+main { max-width: 1120px; 
+  min-height: 70vh; 
+  margin: auto; 
+  padding: 42px 24px; }
+h1 { font-size: 42px; 
+  line-height: 1.15; 
+  margin: 12px 0 20px; }
+h2 { font-size: 23px; 
+  margin: 0 0 14px; }
+h3 { font-size: 19px; }
+.etichetta { font-size: 12px; 
+  font-weight: bold; 
+  letter-spacing: 2px; 
+  color: #476351; }
+.presentazione { background: #e7ecdf; 
+  border-left: 6px solid #245d48; 
+  border-radius: 8px; 
+  padding: 38px; 
+  margin-bottom: 36px; }
+.presentazione p { max-width: 660px; }
+.pulsante { display: inline-block; 
+  background: #245d48; 
+  color: white; 
+  padding: 11px 20px; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  margin-top: 8px; }
+.pulsante:hover { background: #173f30; 
+  color: white; }
+.colonne { display: grid; 
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+  gap: 20px; }
+.due-colonne { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.scheda { min-width: 0; 
+  background: #fffefa; 
+  padding: 24px; 
+  border: 1px solid #d8dfd4; 
+  border-radius: 8px; }
+.numero { color: #546b59; 
+  font-weight: bold; 
+  font-size: 24px; 
+  margin: 0; }
+.introduzione { max-width: 700px; }
+.avviso { background: #f1e7cd; 
+  padding: 14px 18px; 
+  border-left: 4px solid #a77928; 
+  margin: 24px 0; 
+  font-size: 14px; }
+.area-gioco { display: grid; 
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr); 
+  gap: 24px; 
+  align-items: start; }
+.tabellone { width: 100%; 
+  table-layout: fixed; 
+  border-collapse: collapse; 
+  background: #e8efdf; }
+.tabellone td { border: 1px solid #9eaf95; 
+  padding: 0; height: 28px; 
+  text-align: center; 
+  font-size: 14px; }
+.tabellone .centro { background: #e8c46b; }
+.lettere { display: flex; 
+  gap: 7px; 
+  flex-wrap: wrap; }
+.lettere span { display: inline-block; 
+  width: 40px; 
+  padding: 7px 0; 
+  text-align: center; 
+  background: #efdfb5;
+  border: 1px solid #b89f6b; 
+  border-radius: 4px; 
+  font-weight: bold; 
+  font-size: 21px; }
+.azioni { display: flex; 
+  flex-wrap: wrap; 
+  gap: 8px; 
+  margin-top: 20px; }
+button { font: inherit; 
+  padding: 8px 12px; 
+  border: 1px solid #b3bcb2; 
+  border-radius: 5px; }
+button:disabled { background: #e5e8e1; 
+  color: #586153; 
+  cursor: not-allowed; }
+dt { color: #536452; } 
+dd { margin: 0 0 14px; 
+  font-size: 28px; 
+  font-weight: bold; }
+.classifica { border-collapse: collapse; 
+  width: 100%; 
+  font-size: 14px; }
+.classifica caption { text-align: left; 
+  color: #59665e; font-size: 12px; 
+  padding-bottom: 12px; }
+.classifica th, .classifica td { text-align: left; 
+  padding: 10px 5px; 
+  border-bottom: 1px solid #dce1d8; }
+.classifica thead { background: #e7ecdf; }
+footer { border-top: 1px solid #d8dfd4; 
+  text-align: center; 
+  padding: 18px 24px; 
+  font-size: 13px; 
+  color: #59665e; }
+@media (max-width: 760px) {
+  .colonne, .due-colonne, .area-gioco { grid-template-columns: 1fr; }
+  .intestazione { padding: 18px; } .intestazione p { display: none; }
+  nav ul { padding: 0; flex-wrap: wrap; } nav li { flex: 1; } nav a { padding: 12px 10px; text-align: center; }
+  main { padding: 28px 16px; } h1 { font-size: 32px; }
+  .presentazione { padding: 24px; } .scheda { padding: 18px; }
+  .tabellone td { height: 20px; }
+}

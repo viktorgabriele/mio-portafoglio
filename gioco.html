@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gioco | WordArena</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <!-- Intestazione comune alle quattro pagine -->
+  <header class="intestazione">
+    <a class="logo" href="index.html">W<span>WordArena</span></a>
+    <p>Una lettera alla volta.</p>
+  </header>
+  <!-- Menu orizzontale: ogni collegamento apre un file HTML -->
+  <nav aria-label="Menu principale">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gioco.html" class="attiva" aria-current="page">Gioco</a></li>
+        <li><a href="classifiche.html">Classifiche</a></li>
+        <li><a href="regole.html">Regole</a></li>
+    </ul>
+  </nav>
+  <main id="contenuto">
+    <p class="etichetta">COMPONI LA TUA PROSSIMA PAROLA</p>
+    <h1>Il gioco</h1>
+    <p class="introduzione">Questa pagina mostra la disposizione degli elementi della futura partita.</p>
+    <p class="avviso">Tabellone dimostrativo: le lettere e i pulsanti non sono ancora utilizzabili. Le caselle premio saranno aggiunte in seguito.</p>
+    <div class="area-gioco">
+      <section class="scheda" aria-labelledby="titolo-tabellone">
+        <h2 id="titolo-tabellone">Tabellone</h2>
+        <!-- Griglia statica: nessuna logica di gioco -->
+        <table class="tabellone" aria-label="Tabellone dimostrativo vuoto, 17 righe e 17 colonne">
+          <tbody>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="centro">★</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+        <h3>Le tue lettere</h3>
+        <div class="lettere" aria-label="Lettere dimostrative: S, C, A, R, A, B, E, O">
+          <span>S</span><span>C</span><span>A</span><span>R</span><span>A</span><span>B</span><span>E</span><span>O</span>
+        </div>
+        <div class="azioni"><button type="button" disabled>Conferma parola</button><button type="button" disabled>Cambia lettere</button><button type="button" disabled>Passa</button></div>
+      </section>
+      <aside class="scheda">
+        <h2>La tua partita</h2>
+        <dl><dt>Punteggio</dt><dd>—</dd><dt>Lettere utilizzate</dt><dd>—</dd><dt>Personal best</dt><dd>—</dd></dl>
+        <h3>Ultime parole</h3><p>Le parole giocate compariranno qui.</p>
+        <a href="regole.html">Consulta le regole →</a>
+      </aside>
+    </div>
+  </main>
+  <footer><p>WordArena · Progetto di informatica · Layout HTML e CSS</p></footer>
+</body>
+</html>

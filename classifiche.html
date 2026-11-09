@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classifiche | WordArena</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <!-- Intestazione comune alle quattro pagine -->
+  <header class="intestazione">
+    <a class="logo" href="index.html">W<span>WordArena</span></a>
+    <p>Una lettera alla volta.</p>
+  </header>
+  <!-- Menu orizzontale: ogni collegamento apre un file HTML -->
+  <nav aria-label="Menu principale">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gioco.html">Gioco</a></li>
+        <li><a href="classifiche.html" class="attiva" aria-current="page">Classifiche</a></li>
+        <li><a href="regole.html">Regole</a></li>
+    </ul>
+  </nav>
+  <main id="contenuto">
+    <p class="etichetta">OGNI PAROLA CONTA</p>
+    <h1>Le classifiche</h1>
+    <p class="introduzione">Tre modi per confrontare i risultati dei giocatori.</p>
+    <p class="avviso">I nomi e i valori riportati sono inventati e servono soltanto a mostrare il layout.</p>
+    <div class="colonne">
+      <section class="scheda">
+        <h2>Punti totali</h2><p>Somma dei punti ottenuti in tutte le partite.</p>
+        <table class="classifica"><caption>Punti totali · dati di esempio</caption><thead><tr><th scope="col">Pos.</th><th scope="col">Giocatore</th><th scope="col">Punti</th></tr></thead>
+        <tbody><tr><td>1</td><th scope="row">Luna</th><td>2450</td></tr><tr><td>2</td><th scope="row">Marco</th><td>2180</td></tr><tr><td>3</td><th scope="row">Sara</th><td>1940</td></tr></tbody></table>
+      </section>
+      <section class="scheda">
+        <h2>Lettere utilizzate</h2><p>Totale delle lettere giocate nelle partite.</p>
+        <table class="classifica"><caption>Lettere utilizzate · dati di esempio</caption><thead><tr><th scope="col">Pos.</th><th scope="col">Giocatore</th><th scope="col">Lettere</th></tr></thead>
+        <tbody><tr><td>1</td><th scope="row">Sara</th><td>430</td></tr><tr><td>2</td><th scope="row">Luna</th><td>405</td></tr><tr><td>3</td><th scope="row">Marco</th><td>382</td></tr></tbody></table>
+      </section>
+      <section class="scheda">
+        <h2>Personal best</h2><p>Miglior punteggio ottenuto in una singola partita.</p>
+        <table class="classifica"><caption>Personal best · dati di esempio</caption><thead><tr><th scope="col">Pos.</th><th scope="col">Giocatore</th><th scope="col">Record</th></tr></thead>
+        <tbody><tr><td>1</td><th scope="row">Marco</th><td>320</td></tr><tr><td>2</td><th scope="row">Luna</th><td>295</td></tr><tr><td>3</td><th scope="row">Sara</th><td>270</td></tr></tbody></table>
+      </section>
+    </div>
+  </main>
+  <footer><p>WordArena · Progetto di informatica · Layout HTML e CSS</p></footer>
+</body>
+</html>
