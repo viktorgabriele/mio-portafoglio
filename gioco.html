@@ -2,65 +2,39 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gioco | Scarabeo</title>
+  <title>Il gioco | Scarabeo</title>
   <link rel="stylesheet" href="stile.css">
 </head>
 <body>
-  <header class="intestazione">
-    <a class="logo" href="index.html">W<span>scarabeo</span></a>
-  </header>
-  <nav aria-label="Menu principale">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gioco.html" class="attiva" aria-current="page">Gioco</a></li>
-        <li><a href="classifiche.html">Classifiche</a></li>
-        <li><a href="regole.html">Regole</a></li>
-    </ul>
-  </nav>
-  <main id="contenuto">
-    <p class="etichetta">COMPONI LA TUA PROSSIMA PAROLA</p>
+  <div class="intestazione">
     <h1>Il gioco</h1>
-    <p class="introduzione">Questa pagina mostra la disposizione degli elementi della futura partita.</p>
-    <p class="avviso">Tabellone dimostrativo: le lettere e i pulsanti non sono ancora utilizzabili. Le caselle premio saranno aggiunte in seguito.</p>
-    <div class="area-gioco">
-      <section class="scheda" aria-labelledby="titolo-tabellone">
-        <h2 id="titolo-tabellone">Tabellone</h2>
-        <table class="tabellone" aria-label="Tabellone dimostrativo vuoto, 17 righe e 17 colonne">
-          <tbody>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="centro">★</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-          </tbody>
-        </table>
-        <h3>Le tue lettere</h3>
-        <div class="lettere" aria-label="Lettere dimostrative: S, C, A, R, A, B, E, O">
-          <span>S</span><span>C</span><span>A</span><span>R</span><span>A</span><span>B</span><span>E</span><span>O</span>
-        </div>
-        <div class="azioni"><button type="button" disabled>Conferma parola</button><button type="button" disabled>Cambia lettere</button><button type="button" disabled>Passa</button></div>
-      </section>
-      <aside class="scheda">
-        <h2>La tua partita</h2>
-        <dl><dt>Punteggio</dt><dd>—</dd><dt>Lettere utilizzate</dt><dd>—</dd><dt>Personal best</dt><dd>—</dd></dl>
-        <h3>Ultime parole</h3><p>Le parole giocate compariranno qui.</p>
-        <a href="regole.html">Consulta le regole →</a>
-      </aside>
+    <p>La pagina dove si compongono le parole</p>
+  </div>
+
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="gioco.html">Il gioco</a>
+    <a href="classifiche.html">Classifiche</a>
+    <a href="regole.html">Regole</a>
+  </div>
+
+  <div class="contenuto">
+    <p>Questo è un esempio di come potrebbe apparire il tabellone.</p>
+    <div class="scheda">
+      <h2>Tabellone</h2>
+      <table>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td>★</td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+      </table>
+      <h3>Lettere di esempio</h3>
+      <p>S - C - A - R - A - B - E - O</p>
     </div>
-  </main>
-  <footer><p>WordArena · Progetto di informatica · Layout HTML e CSS</p></footer>
+    <p class="evidenziato">Per ora il tabellone è solo una parte dello scheletro del sito e non funziona come un vero gioco.</p>
+  </div>
+
+  <div class="piede">Scarabeo - Viktro Gabriele</div>
 </body>
 </html>
